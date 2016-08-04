@@ -9,7 +9,19 @@
         <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
         <!--Angular JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <!--Local Styles-->
+        <link rel="stylesheet" href="styles/loading.css">
+        <!--Local Scripts-->
+        <script src="scripts/loading.js"></script>
     </head>
-    <body>
+    <body onload="loaded('homepage')">
+        <!--Loading screen animation-->
+        <div id="loading" style="display: block">
+            <img src="graphics/animated-gears.gif">
+        </div>
+        <!--All Webpage Content-->
+        <div id="homepage" style="display: none">
+            Wonderful content
+        </div>
     </body>
 </html>
