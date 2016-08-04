@@ -1,0 +1,13 @@
+/*Individual loader DIV settings*/
+#loading {
+    /*Centre DIV*/
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 350px;
+    height: 350px;
+    /*Centre DIV content*/
+    margin: -175 0 0 -175;
+    /*Place ontop of wrapper*/
+    z-index: 1001;
+}
