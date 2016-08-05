@@ -1,27 +1,26 @@
 <html>
     <head>
         <title>Homepage</title>
-        <!--Import script and style sources-->
-        <!--MDL icons, styles, fonts and scripts-->
+        <!--MDL icons, styles, fonts and styles-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-purple.min.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-        <!--Angular JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-        <!--Local Styles-->
+        <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+        <!--Local Styles and Scripts-->
         <link rel="stylesheet" href="styles/loading.css">
-        <!--Local Scripts-->
-        <script src="scripts/loading.js"></script>
+        <link rel="stylesheet" href="styles/homepage.css">
+        <script src="scripts/homepage.js"></script>
     </head>
     <body onload="loaded('homepage')">
         <!--Loading screen animation-->
-        <div id="loading" style="display: block">
-            <img src="graphics/animated-gears.gif">
+        <div id = "loading-wrapper">
+            <div id="loading">
+                <img src="graphics/animated-gears.gif">
+            </div>
         </div>
         <!--All Webpage Content-->
-        <div id="homepage" style="display: none">
-            Wonderful content
+        <div id="homepage">
+            <centre> Wonderful content</centre>
         </div>
     </body>
 </html>
