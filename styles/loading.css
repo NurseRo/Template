@@ -1,3 +1,18 @@
+/*White page beneath the loading image (it's a wrapper)*/
+#loading-wrapper {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*Above all content*/
+    z-index: 1000;
+    /*Animation*/
+    transition-delay: 2s;
+    transition-property: all;
+    transition-duration: 2s;
+}
 /*Individual loader DIV settings*/
 #loading {
     /*Centre DIV*/
@@ -9,5 +24,15 @@
     /*Centre DIV content*/
     margin: -175 0 0 -175;
     /*Place ontop of wrapper*/
-    z-index: 1001;
+    z-index: 1500;
+    transition: opacity 2s ease-in-out;
+    opacity: 1;
+}
+/*Slide the wrapper out*/
+#loading-wrapper.successful-loading{
+    width: 0;
+}
+/*Fade the image out*/
+#loading.successful-loading{
+    opacity: 0;
 }

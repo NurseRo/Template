@@ -1,0 +1,6 @@
+/*Overall settings*/
+#homepage {
+    /*Ensure all content remains under loading screen*/
+    position: relative;
+    display: none;
+}
