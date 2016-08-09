@@ -7,4 +7,9 @@ function loaded(showpageid){
     loadimg.className = "successful-loading";
     loadpage.className = "successful-loading";
     showpage.style.display = "block";
+    setInterval(hideloader, 5000)
+}
+function hideloader(){
+    var loadpage = document.getElementById("loading-wrapper");
+    loadpage.style.display = "none";
 }
